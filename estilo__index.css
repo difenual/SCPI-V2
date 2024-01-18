@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    color: #0D0A6B;
+    line-height: 1.6;
+}
+
+
+/* header */
+
+header {
+    
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background:  linear-gradient(to right, #1BE7B0, #0D0A6B);
+    color: #ffffff;
+    padding: 1px 20px;
+    text-align: center;
+}
+
+
+.header__img {
+   
+    max-width: 24%; /* Ajuste del tamaño del logo */
+    height: auto;
+}
+
+h1 {
+    
+    font-family: 'Karma', serif;
+    font-size: 4.5vw; /* Ajuste del tamaño del encabezado */
+    height: auto;
+    color: #ffffff;
+}
+
+
+/* Nav */
+.nav {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__ul li {
+    margin-right: 20px;
+    color: #111111;
+}
+
+
+.nav__ul li a {
+    color: #0D0A6B;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+}
+
+
+.nav__ul li a:hover {
+    background-color: #1BE7B0;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .nav__ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .nav__ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Contenedor principal con Flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%; /* Ajuste para que ocupen el ancho completo */
+    margin: 20px 0; /* Ajuste del margen superior e inferior */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(100, 450, 124, 0.1);
+    border-radius: solid 8px;
+}
+
+/* Sección de Bienvenida */
+section#bienvenida {
+    
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1BE7B0;
+    color: #ffffff;
+}
+
+h2 {
+    
+    color: #0D0A6B;
+    font-size: 4vh;
+    font-family: "Karma", serif;
+    padding: none;
+}
+
+
+
+
+
+/* Sección de Misión y Visión */
+section#mision__vision {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mision, .vision {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+}
+
+h3, h4 {
+    color: #111111;
+    font-family: "Karma", serif ;
+}
+
+.mision img, .vision img {
+    width: 12%;
+    margin-bottom: 10px;
+    color: #0D0A6B;
+}
+
+/* Sección de Testimonios */
+/
+#testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajusta el espacio entre los elementos */
+    padding-bottom: 0px;
+}
+
+h5 { 
+
+    font-family: "Karma", serif;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1BE7B0;
+    height: auto;
+    font-size: 25px;
+
+ }
+
+.testimonio__1 {
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px;     
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+    text-align: center;
+    color: #111111;
+
+}
+
+.testimonio__img {
+    max-width: 100%;
+    margin-bottom: 30px; /* Espacio entre la imagen y el contenido del testimonio */
+}
+
+/* Sección de Contacto Rápido */
+
+section#contacto__rapido {
+    text-align: center;
+    padding: 5px 20px;
+}
+
+h6 {    
+
+    font-family: "Karma", serif;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1BE7B0;
+    height: auto;
+    font-size: 25px;
+    margin-right: 0px;
+}
+
+
+
+.contacto__rapido__whatsapp {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    font-size: 8hw;
+}
+
+.fa-whatsapp {
+    height: 85px;
+}
+
+
+
+/* Estilos para la sección de imagen final */
+#imagen__index {
+    text-align: center; /* Centra la imagen horizontalmente */
+
+}
+
+.imagen__index__1 {
+    max-width: 100%; /* La imagen no excede el ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+footer {
+    text-align: center;
+    color: #111111;
+    margin-bottom: 130px;
+    margin-top: 0px;
+}
