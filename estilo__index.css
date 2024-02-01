@@ -169,7 +169,7 @@ h3, h4 {
 
 /* Sección de Testimonios */
 /
-#testimonios {
+section#testimonios {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Ajusta el espacio entre los elementos */
@@ -197,14 +197,15 @@ h5 {
 
 }
 
-.testimonio__img {
+.testimonio__imagen__1 {
     max-width: 100%;
+    height: auto;
     margin-bottom: 30px; /* Espacio entre la imagen y el contenido del testimonio */
 }
 
 /* Sección de Contacto Rápido */
 
-section#contacto__rapido {
+#contacto__rapido {
     text-align: center;
     padding: 5px 20px;
 }
@@ -229,7 +230,7 @@ h6 {
     font-size: 8hw;
 }
 
-.fa-whatsapp {
+.fa-whatsapp, .fa-twitter, .fa-linkedin {
     height: 85px;
 }
 
@@ -249,6 +250,6 @@ h6 {
 footer {
     text-align: center;
     color: #111111;
-    margin-bottom: 130px;
+    margin-bottom: 180px;
     margin-top: 0px;
 }

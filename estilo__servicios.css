@@ -129,9 +129,14 @@ h2 {
     text-align: justify;
     color: #111111;
     padding: 20px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
 
-.servicios__transporte__titulo { 
+.servicios__capacitacion__titulo { 
     background-color: #1BE7B0;
     text-align: center;
     padding: 20px 10px;
@@ -140,9 +145,9 @@ h2 {
     font-weight: bold;
  }
 
-/* Estilos para el sector de transporte */
+/* Estilos para el sector de capacitacion */
 
-.sector__transporte {
+.sector__capacitacion {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -150,26 +155,29 @@ h2 {
     gap: 20px;
 }
 
-.sector__transporte > div {
+.sector__capacitacion > div {
     text-align: center;
     max-width: 300px;
-    margin-top: 10px;
-    border: 1px solid #111111;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
 }
 
-.sector__transporte__img__1, .sector__transporte__img__2, .sector__transporte__img__3, .sector__transporte__img__4, .sector__transporte__img__5 {
+
+.sector__capacitacion__img__1, .sector__capacitacion__img__2, .sector__capacitacion__img__3, .sector__capacitacion__img__4, .sector__capacitacion__img__5, .sector__capacitacion__img__6 {
 
 min-height: 35px;
 margin-top: 20px;
 
 }
 
-.sector__transporte__titulo__1, .sector__transporte__titulo__2, .sector__transporte__titulo__3, .sector__transporte__titulo__4, .sector__transporte__titulo__5 {
+.sector__capacitacion__titulo__1, .sector__capacitacion__titulo__2, .sector__capacitacion__titulo__3, .sector__capacitacion__titulo__4, .sector__capacitacion__titulo__5, .sector__capacitacion__titulo__6 {
     color: #111111;
     padding: 20px 10px;
 }
 
-.sector__transporte__parrafo__1, .sector__transporte__parrafo__2, .sector__transporte__parrafo__3, .sector__transporte__parrafo__4, .sector__transporte__parrafo__5{
+.sector__capacitacion__parrafo__1, .sector__capacitacion__parrafo__2, .sector__capacitacion__parrafo__3, .sector__capacitacion__parrafo__4, .sector__capacitacion__parrafo__5, .sector__capacitacion__parrafo__6 {
     text-align: justify;
     margin: 10px;
 
@@ -187,7 +195,8 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #111111;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .experiencia__parrafo__1 {
@@ -217,7 +226,8 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #111111;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .clientes__parrafo__1 {
@@ -247,7 +257,8 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #111111;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     margin-bottom: 50px;
 }
 
@@ -267,5 +278,5 @@ h5 {
 footer {
     text-align: center;
     color: #111111;
-    margin-bottom: 100px;
+    margin-bottom: 170px;
 }
