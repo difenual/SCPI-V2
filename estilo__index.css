@@ -200,8 +200,18 @@ h5 {
 .testimonio__imagen__1 {
     max-width: 100%;
     height: auto;
-    margin-bottom: 30px; /* Espacio entre la imagen y el contenido del testimonio */
+    margin-bottom: 30px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Espacio entre la imagen y el contenido del testimonio */
 }
+
+@media screen and (min-width: 768px) {
+    .testimonio__imagen__1 {
+    max-width: 40%; /* Establece el límite de anchura en pantallas grandes */
+    height: auto; /* Mantiene la proporción de aspecto */
+    }
+    }
 
 /* Sección de Contacto Rápido */
 
@@ -245,7 +255,17 @@ h6 {
 .imagen__index__1 {
     max-width: 100%; /* La imagen no excede el ancho del contenedor padre */
     height: auto; /* Mantiene la proporción original de la imagen */
+    border: 1px solid #808080;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (min-width: 768px) {
+    .imagen__index__1 {
+    max-width: 40%; /* Establece el límite de anchura en pantallas grandes */
+    height: auto; /* Mantiene la proporción de aspecto */
+    }
+    }
 
 footer {
     text-align: center;

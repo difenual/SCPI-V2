@@ -135,6 +135,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 100%
 }
 
 .blog-post {
@@ -158,8 +159,57 @@ h2 {
     color: #0D0A6B;
 }
 
-.subrayado {
-    text-decoration: underline;
+.publicaciones__imagenes {
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; 
+    margin-top:15px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+@media screen and (min-width: 768px) {
+    .publicaciones__imagenes {
+    max-width: 40%; /* Establece el límite de anchura en pantallas grandes */
+    height: auto; /* Mantiene la proporción de aspecto */
+    }
+    }
+
+/* Estilo para el título "Compartir" */
+.blog-post h4 {
+    font-family: 'Karma', serif; /* Ajuste de la fuente */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio inferior entre el título y los botones */
+    margin-top: 10px;
+}
+
+
+/* Estilos para los botones de compartir */
+.share-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0D0A6B;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+}
+
+.share-button:hover {
+    background-color: #1BE7B0;
+}
+
+
+.share-button i {
+    font-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    color: #FFFFFF;
 }
 
 h6 { 
@@ -178,66 +228,6 @@ h6 {
     padding: 20px;
 }
 
-/* Estilos para los botones de compartir */
-.share-button {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0D0A6B;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-family: 'karma', serif;
-    font-weight: bold;
-}
 
-.share-button:hover {
-    background-color: #1BE7B0;
-}
 
-/* Estilos para los botones de compartir */
-.share-button {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0D0A6B;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-family: 'karma', serif;
-    font-weight: bold;
-}
 
-.share-button:hover {
-    background-color: #1BE7B0;
-}
-
-/* Estilos para los íconos */
-.share-button {
-    display: inline-block;
-    padding: 10px 20px; /* Ajusta el padding según sea necesario */
-    width: auto; /* Opcional: puedes establecer un ancho fijo si lo prefieres */
-    height: auto; /* Ajusta la altura según sea necesario */
-    border-radius: 5px;
-    background-color: #0D0A6B;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-family: 'karma', serif;
-    font-weight: bold;
-}
-
-.share-button i {
-    font-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
-    margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
-}
-
-/* Estilo para el título "Compartir" */
-h4 {
-    font-family: 'Karma', serif; /* Ajuste de la fuente */
-    font-weight: bold;
-    margin-bottom: 10px; /* Espacio inferior entre el título y los botones */
-    margin-top: 10px;
-}
