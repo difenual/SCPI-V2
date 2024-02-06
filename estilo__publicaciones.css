@@ -113,6 +113,17 @@ h2 {
 
  }
 
+.lista__publicaciones a {
+    color: #0D0A6B;
+    text-decoration: underline;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+    justify-content: center;
+}
+
 
 /* Estilos para la sección de Publicaciones */
 #publicaciones {
@@ -120,7 +131,7 @@ h2 {
     padding: 20px;
 }
 
-.blog-container {
+.blog__contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -128,7 +139,7 @@ h2 {
 
 .blog-post {
     width: calc(100% - 20px); /* Ajuste del ancho según tu diseño */
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -147,6 +158,10 @@ h2 {
     color: #0D0A6B;
 }
 
+.subrayado {
+    text-decoration: underline;
+}
+
 h6 { 
 
     font-family: "Karma", serif;
@@ -161,4 +176,68 @@ h6 {
 .enlaces {
     margin-bottom: 150px;
     padding: 20px;
+}
+
+/* Estilos para los botones de compartir */
+.share-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0D0A6B;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+}
+
+.share-button:hover {
+    background-color: #1BE7B0;
+}
+
+/* Estilos para los botones de compartir */
+.share-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0D0A6B;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+}
+
+.share-button:hover {
+    background-color: #1BE7B0;
+}
+
+/* Estilos para los íconos */
+.share-button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    width: auto; /* Opcional: puedes establecer un ancho fijo si lo prefieres */
+    height: auto; /* Ajusta la altura según sea necesario */
+    border-radius: 5px;
+    background-color: #0D0A6B;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+}
+
+.share-button i {
+    font-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
+}
+
+/* Estilo para el título "Compartir" */
+h4 {
+    font-family: 'Karma', serif; /* Ajuste de la fuente */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio inferior entre el título y los botones */
+    margin-top: 10px;
 }

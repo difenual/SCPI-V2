@@ -14,39 +14,100 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var listaPublicaciones = document.getElementById('lista-publicaciones');
 
-    // Itera sobre las publicaciones y crea elementos HTML para cada una
+    // Iterar sobre las publicaciones y crear elementos HTML para cada una
     publicaciones.forEach(function (publicacion, index) {
         var article = document.createElement('article');
         var titulo = document.createElement('h3');
         var contenido = document.createElement('p');
-
+        var shareDiv = document.createElement('div');
+        var facebookBtn = document.createElement('a');
+        var twitterBtn = document.createElement('a');
+        var linkedinBtn = document.createElement('a');
+        var compartirTitulo = document.createElement('h4');
+        
+                
         titulo.textContent = publicacion.titulo;
-        contenido.innerHTML = publicacion.contenido; // Usar innerHTML para interpretar la etiqueta <br>
+        contenido.innerHTML = publicacion.contenido;
 
+             
+        // Agregar clases y atributos necesarios para los botones de compartir
+        
+        facebookBtn.href = '#';
+        facebookBtn.textContent = 'Compartir en Facebook';
+        facebookBtn.classList.add('share-button', 'share-facebook');
+        facebookBtn.innerHTML = '<i class="fab fa-facebook-f"></i>';
+
+        twitterBtn.href = '#';
+        twitterBtn.textContent = 'Compartir en Twitter';
+        twitterBtn.classList.add('share-button', 'share-twitter');
+        twitterBtn.innerHTML = '<i class="fa-brands fa-x-twitter"></i>';
+        
+        linkedinBtn.href = '#';
+        linkedinBtn.textContent = 'Compartir en LinkedIn';
+        linkedinBtn.classList.add('share-button', 'share-linkedin');
+        linkedinBtn.innerHTML = '<i class="fab fa-linkedin-in"></i>';
+
+        // Agregar botones de compartir al contenedor div
+        shareDiv.appendChild(facebookBtn);
+        shareDiv.appendChild(twitterBtn);
+        shareDiv.appendChild(linkedinBtn);
+
+        compartirTitulo.textContent = 'Comparte este artículo en tus redes sociales';
+
+              
+        // Agregar contenido y botones al artículo
         article.appendChild(titulo);
         article.appendChild(contenido);
+        article.appendChild(compartirTitulo);
+        article.appendChild(shareDiv);
 
-        // Añade una clase para aplicar estilos específicos de cada publicación
+        // Agregar clase para aplicar estilos específicos
         article.classList.add('blog-post');
 
-        // Agrega un identificador único para cada publicación
+        // Agregar identificador único para cada publicación
         article.id = 'post-' + index;
 
+        // Agregar artículo a la lista de publicaciones
         listaPublicaciones.appendChild(article);
     });
-});
 
-function buscarPublicaciones() {
-    var input = document.getElementById('search-input').value.toLowerCase();
-    var publicaciones = document.querySelectorAll('.blog-post');
+    // Obtener todos los botones de compartir
+    var shareButtons = document.querySelectorAll('.share-button');
 
-    publicaciones.forEach(function (publicacion) {
-        var contenido = publicacion.textContent.toLowerCase();
+    // Iterar sobre cada botón y agregar un evento de clic
+    shareButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
 
-        if (contenido.includes(input)) {
-            publicacion.style.display = 'block';
-        } else {
-            publicacion.style.display = 'none';
-        }
+            // Obtener la URL de la página actual
+            var url = window.location.href;
+
+            // Obtener el título de la publicación actual
+            var titulo = button.parentNode.parentNode.querySelector('h3').textContent;
+
+            // Obtener la red social correspondiente al botón
+            var socialNetwork = button.classList.contains('share-facebook') ? 'facebook' :
+                                 button.classList.contains('share-twitter') ? 'twitter' :
+                                 button.classList.contains('share-linkedin') ? 'linkedin' : '';
+
+            // Generar el enlace de compartir según la red social
+            var shareUrl = '';
+            switch (socialNetwork) {
+                case 'facebook':
+                    shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+                    break;
+                case 'twitter':
+                    shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(titulo);
+                    break;
+                case 'linkedin':
+                    shareUrl = 'https://www.linkedin.com/shareArticle?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(titulo);
+                    break;
+                default:
+                    break;
+            }
+
+            // Abrir una ventana emergente para compartir
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        });
     });
-}
+});
