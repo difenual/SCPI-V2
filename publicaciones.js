@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         shareDiv.appendChild(twitterBtn);
         shareDiv.appendChild(linkedinBtn);
 
-        compartirTitulo.textContent = '¡Comparte este artículo en tus redes sociales!';
+        compartirTitulo.textContent = '¡Si te gustó este artículo puedes compartirlo en tus redes sociales!';
 
               
         // Agregar contenido y botones al artículo
