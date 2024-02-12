@@ -111,7 +111,6 @@ main {
 
 section {
     width: 100%; /* Ajuste para que ocupen el ancho completo */
-    margin: 20px 0; /* Ajuste del margen superior e inferior */
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(100, 450, 124, 0.1);
@@ -121,7 +120,7 @@ section {
 h2 {
     background-color: #1BE7B0;
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 20px;
 }
 
 .servicios__descripcion {
@@ -131,7 +130,7 @@ h2 {
     padding: 20px 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     
 }
@@ -186,7 +185,7 @@ margin-top: 20px;
 h3 {
     background-color: #1BE7B0;
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 20px;
     margin-top: 20px;
     font-size: 1.5rem;
 }
@@ -216,7 +215,7 @@ h4 {
     
     background-color: #1BE7B0;
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 20px;
     margin-top: 20px;
     font-size: 1.5rem;
 
@@ -247,7 +246,7 @@ h5 {
     
     background-color: #1BE7B0;
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 20px;
     margin-top: 20px;
     font-size: 1.5rem;
 
@@ -259,7 +258,6 @@ h5 {
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 50px;
 }
 
 .honorarios__parrafo__1 {

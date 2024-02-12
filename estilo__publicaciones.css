@@ -113,7 +113,57 @@ h2 {
 
  }
 
- .lista__publicaciones {
+ .formato__busqueda {
+    text-align: center;
+    margin-top: 20px; /* Espacio superior */
+}
+
+.formato__busqueda label {
+    font-family: 'Karma', serif;
+    font-weight: bold;
+    color: #0D0A6B;
+    margin-right: 10px;
+}
+
+.formato__busqueda input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+.formato__busqueda input[type="text"]:focus {
+    border-color: #1BE7B0;
+    outline: none;
+}
+
+.formato__busqueda button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0D0A6B;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Karma', serif;
+    font-weight: bold;
+}
+
+.formato__busqueda button:hover {
+    background-color: #1BE7B0;
+}
+
+.sin__coincidencias {
+    text-align: center;
+    color: #FF0000; /* Color rojo para resaltar el mensaje de error */
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    margin-top: 20px; /* Espacio superior */
+}
+
+
+.lista__publicaciones {
     margin-top: 20px; /* Espacio entre el título "Blog" y la lista de publicaciones */
 }
 
@@ -262,12 +312,16 @@ h6 {
 .enlaces {
     
     padding: 10px;
+    margin-left: 10px;
+    font-family: 'karma', serif;
+    color: #111111;
+
 }
 
 .link__publicaciones {
     margin-top: 20px; /* Espacio superior */
     text-align: justify;
-    margin-bottom: 20px; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px;
 }
 
 .link__publicaciones a {
@@ -283,9 +337,6 @@ h6 {
 .link__publicaciones a:hover {
     background-color: #1BE7B0; /* Cambio de color de fondo al pasar el cursor */
 }
-
-
-
 
 footer {
     text-align: center;
