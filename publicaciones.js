@@ -7,6 +7,10 @@ var publicaciones = [
     {
       titulo: "¿Sabías que a partir de la expedición del artículo 353 de la Ley 2294 de 2023 es viable contratar directamente la ejecución de obras públicas de actividades de mantenimiento y/o mejoramiento de infraestructura social y de transporte? (01/02/2024 - Sara Nuñez) Este artículo explora las implicaciones del artículo 353 de la Ley 2294 de 2023 en la contratación de obras públicas en Colombia, destacando su impacto en la eficiencia y la transparencia de los procesos de contratación" , 
       enlace: "publicaciones__blog__1.html"
+    },
+    {
+      titulo: "La participación ciudadana en la contratación pública: un imperativo democrático (Diego Nuñez 15/02/2023). Este artículo artículo plantea que la participación ciudadana en la contratación pública es indispensable para fortalecer la democracia y combatir la corrupción en Colombia.",
+      enlace: "publicaciones__blog__3.html"
     }
   ];
   
