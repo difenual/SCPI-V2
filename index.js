@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // Renderiza el timeline de tweets
   twttr.widgets.createTimeline({
     sourceType: 'https://twitter.com/ELTIEMPO',
-    screenName: 'ELTIEMPO_',
+    screenName: 'ELTIEMPO',
   }, 
   
   document.getElementById('tweets-container'));
