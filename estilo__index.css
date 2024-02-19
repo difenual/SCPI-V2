@@ -203,7 +203,7 @@ section#testimonios {
 
 #contacto__rapido {
     text-align: center;
-    padding: 0px 50px;
+    padding: 10px 50px;
 }
 
 
@@ -219,40 +219,22 @@ section#testimonios {
 }
 
 .fa-whatsapp, .fa-twitter, .fa-linkedin {
-    height: 85px;
+    height: 85px; 
+    margin-top: 10px;
 }
 
-/* Timeline de Tweets */
+.twitter-timeline {
+    max-width: 100%; /* Ajusta el ancho máximo */
+    margin: 50px auto; /* Centra horizontalmente y agrega espacio alrededor */
+    border-radius: 8px; /* Borde redondeado */
+    overflow: hidden; /* Oculta el desbordamiento */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
 
-#tweets-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;  
-  }
-  
-  .twitter-timeline {
-    max-width: 100% !important;
-  }
-  
-  .twitter-tweet {
-    font-family: "Lato", sans-serif !important;
-    color: #0D0A6B !important;
-  }
-  
-  .twitter-tweet-rendered {
-    padding: 5px !important; 
-  }
-  
-  .twitter-tweet a {
-    color: #1BE7B0 !important; 
-    text-decoration: none !important;
-  }
-  
-  .twitter-tweet a:hover {
-    text-decoration: underline !important;
-  }
+.twitter-timeline iframe {
+    border: none; /* Elimina el borde del iframe */
+}
+
 
 
 
