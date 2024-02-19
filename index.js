@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
   twttr.widgets.createTimeline({
     sourceType: 'https://twitter.com/ELTIEMPO',
     screenName: 'ELTIEMPO',
+    tweetLimit: 3,
   }, 
   
   document.getElementById('tweets-container'));
