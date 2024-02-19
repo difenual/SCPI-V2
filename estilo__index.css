@@ -203,13 +203,13 @@ section#testimonios {
 
 #contacto__rapido {
     text-align: center;
-    padding: 10px 50px;
+    padding: 5px 20px;
 }
 
 
 .contacto__rapido__whatsapp {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
     font-size: 8hw;
     font-family: 'karma', serif;
     font-weight: bold;
@@ -220,21 +220,8 @@ section#testimonios {
 
 .fa-whatsapp, .fa-twitter, .fa-linkedin {
     height: 85px; 
-    margin-top: 10px;
+    margin-top: 5px;
 }
-
-.twitter-timeline {
-    max-width: 100%; /* Ajusta el ancho máximo */
-    margin: 50px auto; /* Centra horizontalmente y agrega espacio alrededor */
-    border-radius: 8px; /* Borde redondeado */
-    overflow: hidden; /* Oculta el desbordamiento */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-.twitter-timeline iframe {
-    border: none; /* Elimina el borde del iframe */
-}
-
 
 
 
