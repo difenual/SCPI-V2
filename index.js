@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function(){
   twttr.widgets.createTimeline({
     sourceType: 'https://twitter.com/SCPI_',
     screenName: 'SCPI_',
-    chrome: "noheader nofooter noborders noscrollbar transparent",
   }, 
   
   document.getElementById('tweets-container'));
