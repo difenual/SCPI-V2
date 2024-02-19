@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Renderiza el timeline de tweets
   twttr.widgets.createTimeline({
-    sourceType: 'https://twitter.com/ELTIEMPO',
-    screenName: 'ELTIEMPO',
+    sourceType: 'https://twitter.com/SCPI_',
+    screenName: 'SCPI_',
     tweetLimit: 3,
   }, 
   
