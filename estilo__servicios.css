@@ -100,6 +100,48 @@ h1 {
         margin-bottom: 10px;
     }
 }
+.link__publicaciones {
+    margin-top: 20px; /* Espacio superior */
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.link__publicaciones a {
+    color: #0D0A6B;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'karma', serif;
+    font-weight: bold;
+}
+
+.link__publicaciones a:hover {
+    background-color: #1BE7B0; /* Cambio de color de fondo al pasar el cursor */
+}
+
+
+.link__publicaciones__1 {
+    margin-top: 20px; /* Espacio superior */
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #111111;
+}
+
+.link__publicaciones__1 a {
+    color: #111111;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+.link__publicaciones__1 a:hover {
+    background-color: #8BD8BD; /* Cambio de color de fondo al pasar el cursor */
+}
 
 
 /* Contenedor principal con Flexbox */
